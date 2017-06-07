@@ -31,5 +31,10 @@ namespace DebtSnowBall2017
 
             this.interest = interest;
         }
+
+        public double getTotalOwed()
+        {
+            return this.totalOwed;
+        }
     }
 }
