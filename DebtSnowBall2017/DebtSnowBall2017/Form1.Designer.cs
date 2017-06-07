@@ -35,6 +35,10 @@
             this.principleLabel = new System.Windows.Forms.Label();
             this.interestLabel = new System.Windows.Forms.Label();
             this.totalOwedLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.principleLabelList = new System.Windows.Forms.Label();
+            this.interestLabelList = new System.Windows.Forms.Label();
+            this.totalOwedList = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // principleTextBox
@@ -97,11 +101,58 @@
             this.totalOwedLabel.Text = "Total Amount Owed";
             this.totalOwedLabel.Click += new System.EventHandler(this.label2_Click_1);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.0597F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.9403F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 39);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(560, 220);
+            this.tableLayoutPanel1.TabIndex = 7;
+            // 
+            // principleLabelList
+            // 
+            this.principleLabelList.AutoSize = true;
+            this.principleLabelList.Location = new System.Drawing.Point(22, 23);
+            this.principleLabelList.Name = "principleLabelList";
+            this.principleLabelList.Size = new System.Drawing.Size(47, 13);
+            this.principleLabelList.TabIndex = 8;
+            this.principleLabelList.Text = "Principle";
+            // 
+            // interestLabelList
+            // 
+            this.interestLabelList.AutoSize = true;
+            this.interestLabelList.Location = new System.Drawing.Point(182, 23);
+            this.interestLabelList.Name = "interestLabelList";
+            this.interestLabelList.Size = new System.Drawing.Size(42, 13);
+            this.interestLabelList.TabIndex = 9;
+            this.interestLabelList.Text = "Interest";
+            // 
+            // totalOwedList
+            // 
+            this.totalOwedList.AutoSize = true;
+            this.totalOwedList.Location = new System.Drawing.Point(284, 23);
+            this.totalOwedList.Name = "totalOwedList";
+            this.totalOwedList.Size = new System.Drawing.Size(101, 13);
+            this.totalOwedList.TabIndex = 7;
+            this.totalOwedList.Text = "Total Amount Owed";
+            this.totalOwedList.Click += new System.EventHandler(this.label3_Click);
+            // 
             // mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.totalOwedList);
+            this.Controls.Add(this.interestLabelList);
+            this.Controls.Add(this.principleLabelList);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.totalOwedLabel);
             this.Controls.Add(this.interestLabel);
             this.Controls.Add(this.principleLabel);
@@ -125,6 +176,10 @@
         private System.Windows.Forms.Label principleLabel;
         private System.Windows.Forms.Label interestLabel;
         private System.Windows.Forms.Label totalOwedLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label principleLabelList;
+        private System.Windows.Forms.Label interestLabelList;
+        private System.Windows.Forms.Label totalOwedList;
     }
 }
 
