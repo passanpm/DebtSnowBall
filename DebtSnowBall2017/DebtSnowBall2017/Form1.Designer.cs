@@ -67,7 +67,7 @@
             // 
             // addToListButton
             // 
-            this.addToListButton.Location = new System.Drawing.Point(497, 299);
+            this.addToListButton.Location = new System.Drawing.Point(497, 304);
             this.addToListButton.Name = "addToListButton";
             this.addToListButton.Size = new System.Drawing.Size(75, 23);
             this.addToListButton.TabIndex = 3;
@@ -159,7 +159,7 @@
             // loanTypeBox
             // 
             this.loanTypeBox.FormattingEnabled = true;
-            this.loanTypeBox.Location = new System.Drawing.Point(408, 301);
+            this.loanTypeBox.Location = new System.Drawing.Point(408, 304);
             this.loanTypeBox.Name = "loanTypeBox";
             this.loanTypeBox.Size = new System.Drawing.Size(83, 21);
             this.loanTypeBox.TabIndex = 0;

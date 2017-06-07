@@ -15,6 +15,8 @@ namespace DebtSnowBall2017
         public mainWindow()
         {
             InitializeComponent();
+
+            loanTypeBox.Items.Add("Student Loan");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -29,13 +31,37 @@ namespace DebtSnowBall2017
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double principle = Convert.ToDouble(principleTextBox.Text);
+            var vp = principleTextBox.Text;
 
-            double interest = Convert.ToDouble(interestTextBox.Text);
+            var vi = interestTextBox.Text;
 
-            double totalOwed = Convert.ToDouble(totalOwedTextBox.Text);
+            var vto = totalOwedTextBox.Text;
 
-            
+           if(vp.Equals("") || vi.Equals("") || vto.Equals(""))
+            {
+                return;
+            }
+
+            double principle = Convert.ToDouble(vp);
+
+            double interest = Convert.ToDouble(vi);
+
+            double totalOwed = Convert.ToDouble(vto);
+
+            Loan newLoan;
+
+            if(loanTypeBox.Text.Equals("Student Loan"))
+            {
+                newLoan = new StudentLoan(principle, interest, totalOwed, 120);
+            } else
+            {
+                newLoan = new Loan(principle, interest, totalOwed, 120);
+            }
+            Label test = new Label();
+
+
+            test.Text = "test";
+            tableLayoutPanel1.Controls.Add(test);
 
 
         }
