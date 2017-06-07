@@ -1,0 +1,9 @@
+C:\Users\Roman\Documents\code\git\DebtSnowBall\DebtSnowBall2017\DebtSnowBall2017\bin\Debug\DebtSnowBall2017.exe.config
+C:\Users\Roman\Documents\code\git\DebtSnowBall\DebtSnowBall2017\DebtSnowBall2017\bin\Debug\DebtSnowBall2017.exe
+C:\Users\Roman\Documents\code\git\DebtSnowBall\DebtSnowBall2017\DebtSnowBall2017\bin\Debug\DebtSnowBall2017.pdb
+C:\Users\Roman\Documents\code\git\DebtSnowBall\DebtSnowBall2017\DebtSnowBall2017\obj\Debug\DebtSnowBall2017.csprojResolveAssemblyReference.cache
+C:\Users\Roman\Documents\code\git\DebtSnowBall\DebtSnowBall2017\DebtSnowBall2017\obj\Debug\DebtSnowBall2017.mainWindow.resources
+C:\Users\Roman\Documents\code\git\DebtSnowBall\DebtSnowBall2017\DebtSnowBall2017\obj\Debug\DebtSnowBall2017.Properties.Resources.resources
+C:\Users\Roman\Documents\code\git\DebtSnowBall\DebtSnowBall2017\DebtSnowBall2017\obj\Debug\DebtSnowBall2017.csproj.GenerateResource.Cache
+C:\Users\Roman\Documents\code\git\DebtSnowBall\DebtSnowBall2017\DebtSnowBall2017\obj\Debug\DebtSnowBall2017.exe
+C:\Users\Roman\Documents\code\git\DebtSnowBall\DebtSnowBall2017\DebtSnowBall2017\obj\Debug\DebtSnowBall2017.pdb

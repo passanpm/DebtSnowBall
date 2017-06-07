@@ -39,6 +39,7 @@
             this.principleLabelList = new System.Windows.Forms.Label();
             this.interestLabelList = new System.Windows.Forms.Label();
             this.totalOwedList = new System.Windows.Forms.Label();
+            this.totalPaidList = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // principleTextBox
@@ -144,11 +145,21 @@
             this.totalOwedList.Text = "Total Amount Owed";
             this.totalOwedList.Click += new System.EventHandler(this.label3_Click);
             // 
+            // totalPaidList
+            // 
+            this.totalPaidList.AutoSize = true;
+            this.totalPaidList.Location = new System.Drawing.Point(450, 23);
+            this.totalPaidList.Name = "totalPaidList";
+            this.totalPaidList.Size = new System.Drawing.Size(94, 13);
+            this.totalPaidList.TabIndex = 10;
+            this.totalPaidList.Text = "Total Amount Paid";
+            // 
             // mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.totalPaidList);
             this.Controls.Add(this.totalOwedList);
             this.Controls.Add(this.interestLabelList);
             this.Controls.Add(this.principleLabelList);
@@ -180,6 +191,7 @@
         private System.Windows.Forms.Label principleLabelList;
         private System.Windows.Forms.Label interestLabelList;
         private System.Windows.Forms.Label totalOwedList;
+        private System.Windows.Forms.Label totalPaidList;
     }
 }
 
