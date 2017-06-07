@@ -29,6 +29,14 @@ namespace DebtSnowBall2017
 
         private void button1_Click(object sender, EventArgs e)
         {
+            double principle = Convert.ToDouble(principleTextBox.Text);
+
+            double interest = Convert.ToDouble(interestTextBox.Text);
+
+            double totalOwed = Convert.ToDouble(totalOwedTextBox.Text);
+
+            
+
 
         }
 

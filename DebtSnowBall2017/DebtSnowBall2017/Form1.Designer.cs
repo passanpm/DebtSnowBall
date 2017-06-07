@@ -40,6 +40,8 @@
             this.interestLabelList = new System.Windows.Forms.Label();
             this.totalOwedList = new System.Windows.Forms.Label();
             this.totalPaidList = new System.Windows.Forms.Label();
+            this.loanTypeBox = new System.Windows.Forms.ComboBox();
+            this.loanTypeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // principleTextBox
@@ -65,7 +67,7 @@
             // 
             // addToListButton
             // 
-            this.addToListButton.Location = new System.Drawing.Point(453, 302);
+            this.addToListButton.Location = new System.Drawing.Point(497, 299);
             this.addToListButton.Name = "addToListButton";
             this.addToListButton.Size = new System.Drawing.Size(75, 23);
             this.addToListButton.TabIndex = 3;
@@ -108,7 +110,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.0597F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.9403F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 39);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -154,11 +156,30 @@
             this.totalPaidList.TabIndex = 10;
             this.totalPaidList.Text = "Total Amount Paid";
             // 
+            // loanTypeBox
+            // 
+            this.loanTypeBox.FormattingEnabled = true;
+            this.loanTypeBox.Location = new System.Drawing.Point(408, 301);
+            this.loanTypeBox.Name = "loanTypeBox";
+            this.loanTypeBox.Size = new System.Drawing.Size(83, 21);
+            this.loanTypeBox.TabIndex = 0;
+            // 
+            // loanTypeLabel
+            // 
+            this.loanTypeLabel.AutoSize = true;
+            this.loanTypeLabel.Location = new System.Drawing.Point(405, 285);
+            this.loanTypeLabel.Name = "loanTypeLabel";
+            this.loanTypeLabel.Size = new System.Drawing.Size(58, 13);
+            this.loanTypeLabel.TabIndex = 11;
+            this.loanTypeLabel.Text = "Loan Type";
+            // 
             // mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.loanTypeLabel);
+            this.Controls.Add(this.loanTypeBox);
             this.Controls.Add(this.totalPaidList);
             this.Controls.Add(this.totalOwedList);
             this.Controls.Add(this.interestLabelList);
@@ -192,6 +213,8 @@
         private System.Windows.Forms.Label interestLabelList;
         private System.Windows.Forms.Label totalOwedList;
         private System.Windows.Forms.Label totalPaidList;
+        private System.Windows.Forms.ComboBox loanTypeBox;
+        private System.Windows.Forms.Label loanTypeLabel;
     }
 }
 
