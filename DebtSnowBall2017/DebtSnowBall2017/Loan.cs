@@ -18,6 +18,8 @@ namespace DebtSnowBall2017
 
         protected double totalPaid;
 
+        protected bool fullyPaid;
+
         public Loan(double principle, double interest, double totalOwed, int monthsToPay)
         {
             this.principle = principle;
@@ -54,6 +56,11 @@ namespace DebtSnowBall2017
         public double getTotalPaid()
         {
             return this.totalPaid;
+        }
+
+        public bool isFullyPaid()
+        {
+            return fullyPaid;
         }
     }
 }

@@ -52,5 +52,10 @@ namespace DebtSnowBall2017
                 panel.Controls.Add(totalPaid);
             }
         }
+
+        public void calculate(double salary)
+        {
+
+        }
     }
 }

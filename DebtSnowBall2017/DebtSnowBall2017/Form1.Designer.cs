@@ -175,6 +175,7 @@
             this.loanTypeBox.Name = "loanTypeBox";
             this.loanTypeBox.Size = new System.Drawing.Size(83, 21);
             this.loanTypeBox.TabIndex = 0;
+            this.loanTypeBox.Text = "Student Loan";
             // 
             // loanTypeLabel
             // 
@@ -209,6 +210,7 @@
             this.calculateButton.TabIndex = 14;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // mainWindow
             // 

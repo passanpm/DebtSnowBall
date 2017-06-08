@@ -72,5 +72,12 @@ namespace DebtSnowBall2017
         {
 
         }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            double salary = Convert.ToDouble(monthlySalaryBox.Text);
+            this.theLoanList.calculate(salary);
+            this.theLoanList.printToScreen(tableLayoutPanel1);
+        }
     }
 }
