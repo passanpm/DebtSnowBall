@@ -42,6 +42,9 @@
             this.totalPaidList = new System.Windows.Forms.Label();
             this.loanTypeBox = new System.Windows.Forms.ComboBox();
             this.loanTypeLabel = new System.Windows.Forms.Label();
+            this.monthlySalaryBox = new System.Windows.Forms.TextBox();
+            this.monthlySalaryLabel = new System.Windows.Forms.Label();
+            this.calculateButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // principleTextBox
@@ -110,12 +113,22 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.0597F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.9403F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 39);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.47826F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(560, 26);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(560, 221);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // principleLabelList
@@ -172,11 +185,39 @@
             this.loanTypeLabel.TabIndex = 11;
             this.loanTypeLabel.Text = "Loan Type";
             // 
+            // monthlySalaryBox
+            // 
+            this.monthlySalaryBox.Location = new System.Drawing.Point(124, 356);
+            this.monthlySalaryBox.Name = "monthlySalaryBox";
+            this.monthlySalaryBox.Size = new System.Drawing.Size(100, 20);
+            this.monthlySalaryBox.TabIndex = 12;
+            // 
+            // monthlySalaryLabel
+            // 
+            this.monthlySalaryLabel.AutoSize = true;
+            this.monthlySalaryLabel.Location = new System.Drawing.Point(121, 340);
+            this.monthlySalaryLabel.Name = "monthlySalaryLabel";
+            this.monthlySalaryLabel.Size = new System.Drawing.Size(76, 13);
+            this.monthlySalaryLabel.TabIndex = 13;
+            this.monthlySalaryLabel.Text = "Monthly Salary";
+            // 
+            // calculateButton
+            // 
+            this.calculateButton.Location = new System.Drawing.Point(240, 354);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(75, 23);
+            this.calculateButton.TabIndex = 14;
+            this.calculateButton.Text = "Calculate";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            // 
             // mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.monthlySalaryLabel);
+            this.Controls.Add(this.monthlySalaryBox);
             this.Controls.Add(this.loanTypeLabel);
             this.Controls.Add(this.loanTypeBox);
             this.Controls.Add(this.totalPaidList);
@@ -214,6 +255,9 @@
         private System.Windows.Forms.Label totalPaidList;
         private System.Windows.Forms.ComboBox loanTypeBox;
         private System.Windows.Forms.Label loanTypeLabel;
+        private System.Windows.Forms.TextBox monthlySalaryBox;
+        private System.Windows.Forms.Label monthlySalaryLabel;
+        private System.Windows.Forms.Button calculateButton;
     }
 }
 
