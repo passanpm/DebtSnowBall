@@ -16,6 +16,8 @@ namespace DebtSnowBall2017
 
         protected int monthsToPay;
 
+        protected double totalPaid;
+
         public Loan(double principle, double interest, double totalOwed, int monthsToPay)
         {
             this.principle = principle;
@@ -30,11 +32,28 @@ namespace DebtSnowBall2017
             }
 
             this.interest = interest;
+
+            this.totalPaid = -1;
+        }
+
+        public double getPrinciple()
+        {
+            return this.principle;
+        }
+
+        public double getInterest()
+        {
+            return this.interest;
         }
 
         public double getTotalOwed()
         {
             return this.totalOwed;
+        }
+
+        public double getTotalPaid()
+        {
+            return this.totalPaid;
         }
     }
 }
