@@ -53,9 +53,28 @@ namespace DebtSnowBall2017
             }
         }
 
+        public bool allPaid()
+        {
+            foreach(Loan loan in loanList)
+            {
+                if (!loan.isFullyPaid)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
         public void calculate(double salary)
         {
-
+            while (!allPaid())
+            {
+                double thisMonthsSalary = salary;
+                for (int i = loanList.Count; i >= 0; i--)
+                {
+                    Loan nextLoan = this.loanList.ElementAt(i);
+                }
+            }
         }
     }
 }

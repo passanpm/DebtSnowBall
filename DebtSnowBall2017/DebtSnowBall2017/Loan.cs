@@ -36,6 +36,8 @@ namespace DebtSnowBall2017
             this.interest = interest;
 
             this.totalPaid = -1;
+
+            this.fullyPaid = false;
         }
 
         public double getPrinciple()
