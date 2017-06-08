@@ -113,16 +113,15 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 39);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(560, 220);
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.47826F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(560, 26);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // principleLabelList
             // 
             this.principleLabelList.AutoSize = true;
-            this.principleLabelList.Location = new System.Drawing.Point(22, 23);
+            this.principleLabelList.Location = new System.Drawing.Point(9, 23);
             this.principleLabelList.Name = "principleLabelList";
             this.principleLabelList.Size = new System.Drawing.Size(47, 13);
             this.principleLabelList.TabIndex = 8;
@@ -150,7 +149,7 @@
             // totalPaidList
             // 
             this.totalPaidList.AutoSize = true;
-            this.totalPaidList.Location = new System.Drawing.Point(450, 23);
+            this.totalPaidList.Location = new System.Drawing.Point(444, 23);
             this.totalPaidList.Name = "totalPaidList";
             this.totalPaidList.Size = new System.Drawing.Size(94, 13);
             this.totalPaidList.TabIndex = 10;
