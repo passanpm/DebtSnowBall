@@ -20,13 +20,13 @@ namespace DebtSnowBall2017
 
         protected bool fullyPaid;
 
-        public Loan(double principle, double interest, double totalOwed, int monthsToPay)
+        public Loan(double principle, double interest, double totalOwed)
         {
             this.principle = principle;
 
             this.totalOwed = totalOwed;
 
-            this.monthsToPay = monthsToPay;
+            this.monthsToPay = 0;
 
             if(interest > 1.0)
             {
@@ -60,9 +60,25 @@ namespace DebtSnowBall2017
             return this.totalPaid;
         }
 
+        public int getMonthsToPay()
+        {
+            return this.monthsToPay;
+        }
+
         public bool isFullyPaid()
         {
             return fullyPaid;
+        }
+
+        public void payExtra(double payment)
+        {
+            this.totalOwed -= payment;
+        }
+
+        public virtual double payMonthlyBill(double payment)
+        {
+
+            return 0.0;
         }
     }
 }

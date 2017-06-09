@@ -36,9 +36,9 @@ namespace DebtSnowBall2017
                 interest.Text = Convert.ToString(loan.getInterest() * 10) + "%";
                 panel.Controls.Add(interest);
 
-                Label totalOwed = new Label();
-                totalOwed.Text = Convert.ToString(loan.getTotalOwed());
-                panel.Controls.Add(totalOwed);
+                Label monthsToPay = new Label();
+                monthsToPay.Text = Convert.ToString(loan.getMonthsToPay());
+                panel.Controls.Add(monthsToPay);
 
                 Label totalPaid = new Label();
                 if (loan.getTotalPaid() < 0)
@@ -57,7 +57,7 @@ namespace DebtSnowBall2017
         {
             foreach(Loan loan in loanList)
             {
-                if (!loan.isFullyPaid)
+                if (!loan.isFullyPaid())
                 {
                     return false;
                 }
@@ -70,9 +70,17 @@ namespace DebtSnowBall2017
             while (!allPaid())
             {
                 double thisMonthsSalary = salary;
-                for (int i = loanList.Count; i >= 0; i--)
+                foreach (Loan nextLoan in this.loanList)
                 {
-                    Loan nextLoan = this.loanList.ElementAt(i);
+                    thisMonthsSalary = nextLoan.payMonthlyBill(thisMonthsSalary);
+                }
+
+                foreach (Loan nextLoan in this.loanList)
+                {
+                    if (nextLoan.isFullyPaid())
+                    {
+                        nextLoan.payExtra(thisMonthsSalary);
+                    }
                 }
             }
         }

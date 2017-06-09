@@ -56,10 +56,10 @@ namespace DebtSnowBall2017
 
             if(loanTypeBox.Text.Equals("Student Loan"))
             {
-                newLoan = new StudentLoan(principle, interest, totalOwed, 120);
+                newLoan = new StudentLoan(principle, interest, totalOwed);
             } else
             {
-                newLoan = new Loan(principle, interest, totalOwed, 120);
+                newLoan = new Loan(principle, interest, totalOwed);
             }
 
             this.theLoanList.addLoan(newLoan);
