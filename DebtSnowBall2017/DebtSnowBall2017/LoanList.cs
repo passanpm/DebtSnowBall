@@ -74,7 +74,7 @@ namespace DebtSnowBall2017
                 {
                     thisMonthsSalary = nextLoan.payMonthlyBill(thisMonthsSalary);
                 }
-                /*
+                
                 foreach (Loan nextLoan in this.loanList)
                 {
                     if (!nextLoan.isFullyPaid())
@@ -83,7 +83,7 @@ namespace DebtSnowBall2017
                         break;
                     }
                 } 
-                */
+                
             }
         }
     }

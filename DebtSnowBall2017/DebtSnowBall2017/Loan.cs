@@ -72,7 +72,14 @@ namespace DebtSnowBall2017
 
         public void payExtra(double payment)
         {
+            
+            if(this.totalOwed < payment)
+            {
+                this.fullyPaid = true;
+                this.totalPaid += totalOwed;
+            }
             this.totalOwed -= payment;
+            this.totalPaid += payment;
         }
 
         public virtual double payMonthlyBill(double payment)

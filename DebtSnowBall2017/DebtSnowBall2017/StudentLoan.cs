@@ -9,21 +9,24 @@ namespace DebtSnowBall2017
     class StudentLoan : Loan
     {
         private double monthlyDebt;
+        private double monthlyInterestRate;
         public StudentLoan(double principle, double interest, int monthsToPay) : base(principle, interest, monthsToPay)
         {
-            double monthlyInterestRate = this.interest / 12.0;
-            this.monthlyDebt = (monthlyInterestRate * this.principle * Math.Pow(1.0 + monthlyInterestRate, this.monthsToPay))/ (Math.Pow(1.0 + monthlyInterestRate, this.monthsToPay) - 1);
+            this.monthlyInterestRate = this.interest / 12.0;
+            this.monthlyDebt = (this.monthlyInterestRate * this.principle * Math.Pow(1.0 + this.monthlyInterestRate, this.monthsToPay))/ (Math.Pow(1.0 + this.monthlyInterestRate, this.monthsToPay) - 1);
             //System.Windows.Forms.MessageBox.Show(Convert.ToString(this.monthlyDebt));
         }
 
 
         public override double payMonthlyBill(double payment)
         {
-            this.totalOwed += (this.totalOwed * this.interest) / 12.0;
+            double towardInterest = this.totalOwed * this.monthlyInterestRate;
 
-            this.totalOwed -= this.monthlyDebt;
+            double towardPrinciple = this.monthlyDebt - towardInterest;
 
             this.totalPaid += this.monthlyDebt;
+
+            this.totalOwed -= towardPrinciple;
 
             if(this.totalOwed < this.monthlyDebt)
             {
