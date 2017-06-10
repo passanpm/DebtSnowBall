@@ -113,7 +113,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.0597F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.9403F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 39);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
@@ -154,9 +154,9 @@
             this.totalOwedList.AutoSize = true;
             this.totalOwedList.Location = new System.Drawing.Point(284, 23);
             this.totalOwedList.Name = "totalOwedList";
-            this.totalOwedList.Size = new System.Drawing.Size(101, 13);
+            this.totalOwedList.Size = new System.Drawing.Size(97, 13);
             this.totalOwedList.TabIndex = 7;
-            this.totalOwedList.Text = "Total Amount Owed";
+            this.totalOwedList.Text = "Months in Payment";
             this.totalOwedList.Click += new System.EventHandler(this.label3_Click);
             // 
             // totalPaidList
