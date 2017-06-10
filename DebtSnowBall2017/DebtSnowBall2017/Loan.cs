@@ -77,6 +77,7 @@ namespace DebtSnowBall2017
             {
                 this.fullyPaid = true;
                 this.totalPaid += totalOwed;
+                return;
             }
             this.totalOwed -= payment;
             this.totalPaid += payment;

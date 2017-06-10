@@ -37,7 +37,14 @@ namespace DebtSnowBall2017
                 panel.Controls.Add(interest);
 
                 Label monthsToPay = new Label();
-                monthsToPay.Text = Convert.ToString(loan.getMonthsToPay());
+                if (loan.getMonthsToPay() <= 0)
+                {
+                    monthsToPay.Text = "Not Yet Calculated";
+                }
+                else
+                {
+                    monthsToPay.Text = Convert.ToString(loan.getMonthsToPay());
+                }
                 panel.Controls.Add(monthsToPay);
 
                 Label totalPaid = new Label();

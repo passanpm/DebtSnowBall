@@ -14,6 +14,7 @@ namespace DebtSnowBall2017
         {
             this.monthlyInterestRate = this.interest / 12.0;
             this.monthlyDebt = (this.monthlyInterestRate * this.principle * Math.Pow(1.0 + this.monthlyInterestRate, this.monthsToPay))/ (Math.Pow(1.0 + this.monthlyInterestRate, this.monthsToPay) - 1);
+            this.monthsToPay = 0;
             //System.Windows.Forms.MessageBox.Show(Convert.ToString(this.monthlyDebt));
         }
 
