@@ -39,7 +39,7 @@ namespace DebtSnowBall2017
 
             var vi = interestTextBox.Text;
 
-            var vto = totalOwedTextBox.Text;
+            var vto = monthsInPaymentTextBox.Text;
 
            if(vp.Equals("") || vi.Equals("") || vto.Equals(""))
             {
@@ -50,16 +50,16 @@ namespace DebtSnowBall2017
 
             double interest = Convert.ToDouble(vi);
 
-            double totalOwed = Convert.ToDouble(vto);
+            int monthsInPayment = Convert.ToInt32(vto);
 
             Loan newLoan;
 
             if(loanTypeBox.Text.Equals("Student Loan"))
             {
-                newLoan = new StudentLoan(principle, interest, totalOwed);
+                newLoan = new StudentLoan(principle, interest, monthsInPayment);
             } else
             {
-                newLoan = new Loan(principle, interest, totalOwed);
+                newLoan = new Loan(principle, interest, monthsInPayment);
             }
 
             this.theLoanList.addLoan(newLoan);

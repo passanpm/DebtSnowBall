@@ -30,11 +30,11 @@
         {
             this.principleTextBox = new System.Windows.Forms.TextBox();
             this.interestTextBox = new System.Windows.Forms.TextBox();
-            this.totalOwedTextBox = new System.Windows.Forms.TextBox();
+            this.monthsInPaymentTextBox = new System.Windows.Forms.TextBox();
             this.addToListButton = new System.Windows.Forms.Button();
             this.principleLabel = new System.Windows.Forms.Label();
             this.interestLabel = new System.Windows.Forms.Label();
-            this.totalOwedLabel = new System.Windows.Forms.Label();
+            this.monthsInPaymentLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.principleLabelList = new System.Windows.Forms.Label();
             this.interestLabelList = new System.Windows.Forms.Label();
@@ -61,12 +61,12 @@
             this.interestTextBox.Size = new System.Drawing.Size(50, 20);
             this.interestTextBox.TabIndex = 1;
             // 
-            // totalOwedTextBox
+            // monthsInPaymentTextBox
             // 
-            this.totalOwedTextBox.Location = new System.Drawing.Point(287, 304);
-            this.totalOwedTextBox.Name = "totalOwedTextBox";
-            this.totalOwedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.totalOwedTextBox.TabIndex = 2;
+            this.monthsInPaymentTextBox.Location = new System.Drawing.Point(287, 304);
+            this.monthsInPaymentTextBox.Name = "monthsInPaymentTextBox";
+            this.monthsInPaymentTextBox.Size = new System.Drawing.Size(100, 20);
+            this.monthsInPaymentTextBox.TabIndex = 2;
             // 
             // addToListButton
             // 
@@ -97,15 +97,15 @@
             this.interestLabel.Text = "Interest";
             this.interestLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // totalOwedLabel
+            // monthsInPaymentLabel
             // 
-            this.totalOwedLabel.AutoSize = true;
-            this.totalOwedLabel.Location = new System.Drawing.Point(284, 286);
-            this.totalOwedLabel.Name = "totalOwedLabel";
-            this.totalOwedLabel.Size = new System.Drawing.Size(101, 13);
-            this.totalOwedLabel.TabIndex = 6;
-            this.totalOwedLabel.Text = "Total Amount Owed";
-            this.totalOwedLabel.Click += new System.EventHandler(this.label2_Click_1);
+            this.monthsInPaymentLabel.AutoSize = true;
+            this.monthsInPaymentLabel.Location = new System.Drawing.Point(284, 286);
+            this.monthsInPaymentLabel.Name = "monthsInPaymentLabel";
+            this.monthsInPaymentLabel.Size = new System.Drawing.Size(97, 13);
+            this.monthsInPaymentLabel.TabIndex = 6;
+            this.monthsInPaymentLabel.Text = "Months in Payment";
+            this.monthsInPaymentLabel.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // tableLayoutPanel1
             // 
@@ -113,7 +113,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.0597F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.9403F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 39);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
@@ -227,11 +227,11 @@
             this.Controls.Add(this.interestLabelList);
             this.Controls.Add(this.principleLabelList);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.totalOwedLabel);
+            this.Controls.Add(this.monthsInPaymentLabel);
             this.Controls.Add(this.interestLabel);
             this.Controls.Add(this.principleLabel);
             this.Controls.Add(this.addToListButton);
-            this.Controls.Add(this.totalOwedTextBox);
+            this.Controls.Add(this.monthsInPaymentTextBox);
             this.Controls.Add(this.interestTextBox);
             this.Controls.Add(this.principleTextBox);
             this.Name = "mainWindow";
@@ -245,11 +245,11 @@
 
         private System.Windows.Forms.TextBox principleTextBox;
         private System.Windows.Forms.TextBox interestTextBox;
-        private System.Windows.Forms.TextBox totalOwedTextBox;
+        private System.Windows.Forms.TextBox monthsInPaymentTextBox;
         private System.Windows.Forms.Button addToListButton;
         private System.Windows.Forms.Label principleLabel;
         private System.Windows.Forms.Label interestLabel;
-        private System.Windows.Forms.Label totalOwedLabel;
+        private System.Windows.Forms.Label monthsInPaymentLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label principleLabelList;
         private System.Windows.Forms.Label interestLabelList;

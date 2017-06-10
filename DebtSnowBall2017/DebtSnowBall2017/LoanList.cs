@@ -33,7 +33,7 @@ namespace DebtSnowBall2017
                 panel.Controls.Add(principle);
 
                 Label interest = new Label();
-                interest.Text = Convert.ToString(loan.getInterest() * 10) + "%";
+                interest.Text = Convert.ToString(loan.getInterest() * 100) + "%";
                 panel.Controls.Add(interest);
 
                 Label monthsToPay = new Label();

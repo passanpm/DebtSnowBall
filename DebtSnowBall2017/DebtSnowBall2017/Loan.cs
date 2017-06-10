@@ -20,17 +20,17 @@ namespace DebtSnowBall2017
 
         protected bool fullyPaid;
 
-        public Loan(double principle, double interest, double totalOwed)
+        public Loan(double principle, double interest, int monthsToPay)
         {
             this.principle = principle;
 
-            this.totalOwed = totalOwed;
+            this.totalOwed = principle;
 
-            this.monthsToPay = 0;
+            this.monthsToPay = monthsToPay;
 
             if(interest > 1.0)
             {
-                interest *= 0.1;
+                interest *= 0.01;
             }
 
             this.interest = interest;
